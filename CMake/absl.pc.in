@@ -1,0 +1,12 @@
+prefix=@PKGCONF_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=@PKGCONF_INSTALL_LIBDIR@
+includedir=@PKGCONF_INSTALL_INCLUDEDIR@
+
+Name: @PKGCONF_NAME@
+Description: @PKGCONF_DESCRIPTION@
+URL: @PKGCONF_URL@
+Version: @PKGCONF_VERSION@
+Libs: -L${libdir} @PKGCONF_ALL_LIB_NAMES@
+Libs.private: @PKGCONF_ALL_PRIVATE_LIB_NAMES@
+Cflags: -I${includedir} 
